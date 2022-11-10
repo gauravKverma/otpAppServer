@@ -27,7 +27,7 @@ app.post("/sendOTP", async (req, res) => {
   // post request to get Otp from frontend
   let data = req.body;
   const from = "Kisan Network";
-  const to = "+919997744296"; // phone number given by Kisan Network
+  const to = "+919810153260"; // phone number given by Kisan Network
   const text = `Hi. Your OTP is: ${data.otp}`; // otp from frontend
 
   vonage.message.sendSms(from, to, text, (err, res) => {
